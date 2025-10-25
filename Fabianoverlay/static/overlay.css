@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-container {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    width: 120px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.stat-item {
+    padding: 8px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#premier_rating {
+    font-size: 24px;
+}
+
+.update-time {
+    font-size: 0.001px;
+    color: #ffffff00;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Animationen für Updates */
+@keyframes highlight {
+    0% { background-color: rgba(0, 255, 0, 0.2); }
+    100% { background-color: rgba(0, 0, 0, 0.3); }
+}
+
+.updated {
+    animation: highlight 1s ease-out;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabian Overlay Cs2 Stats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='overlay.css') }}">
+</head>
+<body>
+    <div class="overlay-container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-label">Letzte Map</div>
+                <div class="stat-value" id="current_map">-</div>
+            </div>
+            <br>
+            <div class="stat-item">
+                <div class="stat-label">Premier Rank</div>
+                <div class="stat-value" id="premier_rating">-</div>
+            </div>
+            <br>
+            <div class="stat-item">
+                <div class="stat-label">K/D Ratio</div>
+                <div class="stat-value" id="kd_ratio">-</div>
+            </div>
+            <br>
+            <div class="stat-item">
+                <div class="stat-label">Elo Gewinn</div>
+                <div class="stat-value" id="elo">-</div>
+        </div>
+           <div class="update-time" id="last_updated"></div>
+    </div>
+     <script src="{{ url_for('static', filename='overlay.js') }}"></script>
+</body>
+</html>
